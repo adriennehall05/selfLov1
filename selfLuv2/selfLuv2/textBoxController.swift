@@ -9,7 +9,6 @@
 import UIKit
 
 class textBoxController: UIViewController {
-    var text
     
     
 
@@ -35,4 +34,20 @@ class textBoxController: UIViewController {
         }
     
    
+   // @IBAction func TitleBoxTapped(_ sender: Any)
+    //{
+    //    if let context =
+     //       (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+     //       let titleToSave = title(entity: title.entity(), insertInto: context)
+     //       titleToSave.text = TitleBoxTapped.text
+      //  }
+      //  (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        
+        //navigationController?.popViewController(animated: true)
+  //  }
+    
+    
+   
+
+//}
 }

@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="-558.42391304347825"/>
         </scene>
-        <!--Old Reflection View Controller-->
+        <!--Text Detail View Controller-->
         <scene sceneID="wRc-bz-cCO">
             <objects>
-                <viewController id="RKy-RF-aFi" customClass="OldReflectionViewController" customModule="selfLuv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RKy-RF-aFi" customClass="TextDetailViewController" customModule="selfLuv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0St-JV-Ev1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,10 +131,6 @@
                         <color key="backgroundColor" red="0.99472111460000001" green="0.86701756720000001" blue="0.64079523090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ca1-wg-4NP"/>
                     </view>
-                    <connections>
-                        <outlet property="passText" destination="nfI-IE-Jay" id="XQ5-x0-ZTa"/>
-                        <outlet property="passTitle" destination="k6r-Cn-2V9" id="uFS-wR-Ffe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEr-Wd-aaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
