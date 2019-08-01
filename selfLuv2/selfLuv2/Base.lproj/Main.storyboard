@@ -76,9 +76,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="RKy-RF-aFi" kind="show" id="FNc-gZ-n3t"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -98,6 +95,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="RKy-RF-aFi" kind="show" identifier="detailSegue" id="PCj-Po-feA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUG-ET-RMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +131,9 @@
                         <color key="backgroundColor" red="0.99472111460000001" green="0.86701756720000001" blue="0.64079523090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ca1-wg-4NP"/>
                     </view>
+                    <connections>
+                        <outlet property="oldText" destination="nfI-IE-Jay" id="MOX-AD-Pwa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEr-Wd-aaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

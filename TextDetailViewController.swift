@@ -10,11 +10,25 @@ import UIKit
 
 class TextDetailViewController: UIViewController {
 
+
+    @IBOutlet weak var oldText: UITextView!
+    
+    var oldReflec : Text? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let realText = oldReflec {
+            title = realText.text
+            
+                }
+            }
+        }
+        
+        
 
         // Do any additional setup after loading the view.
-    }
+
     
 
     /*
@@ -27,4 +41,4 @@ class TextDetailViewController: UIViewController {
     }
     */
 
-}
+

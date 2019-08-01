@@ -10,10 +10,13 @@ import UIKit
 
 class ReflectionTableViewController: UITableViewController {
     
-    var texts : [Text] = []
+    var texts: [Text] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let realText = texts {
+            title = realText.text
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -72,7 +75,22 @@ class ReflectionTableViewController: UITableViewController {
             (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
             getTexts()
         }
-
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            performSegue(withIdentifier: "detailSegue", sender: texts[indexPath.row])
+        }
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "detailSegue" {
+                if let textDetailView = segue.destination as? TextDetailViewController {
+                    
+                    if let textToSend = sender as? Text {
+                        textDetailView.oldText.text = textToSend.text
+                    }
+                    
+                }
+            }
+        }
 
     /*
     // Override to support rearranging the table view.
@@ -98,6 +116,8 @@ class ReflectionTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+        
 
 }
 }
+
