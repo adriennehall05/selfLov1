@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183D605422F3434B00CAC649 /* OldReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D605322F3434B00CAC649 /* OldReflectionViewController.swift */; };
+		1872B8D022F31EE3000B9939 /* textBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B8CF22F31EE3000B9939 /* textBoxController.swift */; };
+		1872B8D222F335D0000B9939 /* ReflectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B8D122F335D0000B9939 /* ReflectionTableViewController.swift */; };
 		188BF4B422F20F1F00BD8B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF4B322F20F1F00BD8B2F /* AppDelegate.swift */; };
 		188BF4B622F20F1F00BD8B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF4B522F20F1F00BD8B2F /* ViewController.swift */; };
 		188BF4B922F20F1F00BD8B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188BF4B722F20F1F00BD8B2F /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183D605322F3434B00CAC649 /* OldReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldReflectionViewController.swift; sourceTree = "<group>"; };
+		1872B8CF22F31EE3000B9939 /* textBoxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBoxController.swift; sourceTree = "<group>"; };
+		1872B8D122F335D0000B9939 /* ReflectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionTableViewController.swift; sourceTree = "<group>"; };
 		188BF4B022F20F1F00BD8B2F /* selfLuv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLuv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188BF4B322F20F1F00BD8B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188BF4B522F20F1F00BD8B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 				188BF4B322F20F1F00BD8B2F /* AppDelegate.swift */,
 				188BF4B522F20F1F00BD8B2F /* ViewController.swift */,
 				188BF4B722F20F1F00BD8B2F /* Main.storyboard */,
+				183D605322F3434B00CAC649 /* OldReflectionViewController.swift */,
+				1872B8CF22F31EE3000B9939 /* textBoxController.swift */,
+				1872B8D122F335D0000B9939 /* ReflectionTableViewController.swift */,
 				188BF4BD22F20F2100BD8B2F /* Assets.xcassets */,
 				188BF4BF22F20F2100BD8B2F /* LaunchScreen.storyboard */,
 				188BF4C222F20F2100BD8B2F /* Info.plist */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1872B8D022F31EE3000B9939 /* textBoxController.swift in Sources */,
 				188BF4B622F20F1F00BD8B2F /* ViewController.swift in Sources */,
 				188BF4BC22F20F1F00BD8B2F /* selfLuv2.xcdatamodeld in Sources */,
+				183D605422F3434B00CAC649 /* OldReflectionViewController.swift in Sources */,
+				1872B8D222F335D0000B9939 /* ReflectionTableViewController.swift in Sources */,
 				188BF4B422F20F1F00BD8B2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func MindfulnessButtonTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func DailyReflecButtonTapped(_ sender: Any) {
+    }
+    
 }
+
+
 
