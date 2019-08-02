@@ -73,17 +73,16 @@ class ReflectionTableViewController: UITableViewController {
             (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
             getTexts()
         }
-        
+       
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             performSegue(withIdentifier: "detailSegue", sender: texts[indexPath.row])
         }
         
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "detailSegue" {
-                if let TextDetailViewController = segue.destination as? TextDetailViewController {
-                    
+                if let textDetailView = segue.destination as? TextDetailViewController {
                     if let textToSend = sender as? Text {
-                        TextDetailViewController.oldReflec = textToSend
+                        textDetailView.oldReflec = textToSend
                     }
                     
                 }

@@ -19,7 +19,9 @@ class TextDetailViewController: UIViewController {
         super.viewDidLoad()
         if let realtexts = oldReflec {
             title = realtexts.text
+            oldText.text = realtexts.text
         }
+    
         
       
                 }
