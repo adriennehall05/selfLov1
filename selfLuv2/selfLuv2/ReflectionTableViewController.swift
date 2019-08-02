@@ -14,9 +14,7 @@ class ReflectionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let realText = texts {
-            title = realText.text
-        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -82,17 +80,18 @@ class ReflectionTableViewController: UITableViewController {
         
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "detailSegue" {
-                if let textDetailView = segue.destination as? TextDetailViewController {
+                if let TextDetailViewController = segue.destination as? TextDetailViewController {
                     
                     if let textToSend = sender as? Text {
-                        textDetailView.oldText.text = textToSend.text
+                        TextDetailViewController.oldReflec = textToSend
                     }
                     
                 }
             }
         }
-
-    /*
+        
+        
+                    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
